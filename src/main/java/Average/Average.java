@@ -1,3 +1,5 @@
+package Average;
+
 import java.util.Random;
 
 public class Average {
@@ -22,7 +24,6 @@ public class Average {
 
         System.out.println(sum/numbers);
     }
-
 
 
 }
