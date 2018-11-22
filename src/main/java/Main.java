@@ -1,11 +1,12 @@
-import Collection.ArrayListNotes;
+
 import Collection.LinkedListExample;
+import Collection.Lists;
 
 public class Main {
 
     public static void main(String[] args) throws java.lang.Exception {
-        ArrayListNotes inf = new ArrayListNotes();
+        Lists inf = new Lists();
         inf.informaticaNotes();
-
+        inf.linkedList();
     }
 }
