@@ -29,15 +29,17 @@ public class Employee {
         return this.firstName.equals(e.firstName) && this.lastName.equals(e.lastName) && this.peselId.equals(e.peselId);
     }
 
+    @Override
     public int hashCode(){
-        //This method cuts first 6 (0-5) characters from peselId
-        //and then converts it into Integer
-        //peselId includes year and month and day of birth in the first 6 characters
-        //for example: beginning of peselId 800630 means that persone having this peselId
-        //was born on 30 july 1980.
-        //returning value will be 800630 (Integer type)
         return Integer.parseInt(peselId.substring(0, 5));
     }
 
+    public String toString(){
+        return firstName + " " + lastName + " (" + peselId + ")";
+    }
+
+
 }
+
+
 

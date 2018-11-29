@@ -1,6 +1,7 @@
 package Collection;
 
 import java.util.HashMap;
+import java.util.Map;
 
 class HashMapTest {
     public static void main(String[] args) throws java.lang.Exception {
@@ -23,5 +24,19 @@ class HashMapTest {
 
         System.out.println("Salary of Jennifer Nowak equals: " + paymentParameters.get(worker1));
 
+        //Creating and filling the map
+        HashMap<Integer, String> theMap = new HashMap<Integer, String>();
+        theMap.put(1, "One");
+        theMap.put(2, "Two");
+        theMap.put(7, "Seven");
+
+        //Using entrySet() to retrieve and display content of the map
+        for (Map.Entry<Integer, String> entry : theMap.entrySet()) {
+            System.out.println("Object: <" + entry.getKey() + ", " + entry.getValue() + ">");
+
+
+
+        }
     }
 }
+
