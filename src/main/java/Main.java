@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
+import static Fibonacci.Fibonacci.fibonacci;
 //1.	Przy użyciu wewnętrznego edytora Kodilli stwórz program z użyciem HashMap, który będzie przechowywał dane uczniów oraz ich ocen.
 //2.	Program ma wyświetlać średnią arytmetyczną ocen każdego ucznia.
 //3.	Rozwiązane zadanie wyślij do mentora.
@@ -28,5 +30,9 @@ public class Main {
             System.out.println("Average grades of student: " + entry.getKey() + ""+ entry.getValue()+ "is average: "
                     + entry.getValue().countAverage());
         }
+
+        int n = Integer.parseInt(args[0]);
+        for (int i = 1; i <= n; i++)
+            System.out.println(i + ": " + fibonacci(i));
     }
 }
